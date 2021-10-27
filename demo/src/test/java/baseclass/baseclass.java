@@ -54,7 +54,7 @@ public class baseclass {
 					
 		 if (driver == null) {
 					try {
-						 fis= new FileInputStream("C:\\Users\\BOSU\\eclipse-workspace\\demo\\src\\test\\resources\\config.properties");
+						 fis= new FileInputStream("C:\\Users\\BOSU\\git\\demo\\demo\\src\\test\\resources\\config.properties");
 					} catch (FileNotFoundException e) {
 						e.printStackTrace();
 					}
@@ -73,13 +73,13 @@ public class baseclass {
 			
 				if(pro.getProperty("browser").equals("chrome")) {
 					
-					System.setProperty("webdriver.chrome.driver","C:\\Users\\BOSU\\eclipse-workspace\\demo\\src\\test\\resources\\Drivers\\chromedriver.exe");
+					System.setProperty("webdriver.chrome.driver","C:\\Users\\BOSU\\git\\demo\\demo\\src\\test\\resources\\Drivers\\chromedriver.exe");
 					driver = new ChromeDriver();
 					log.info("launching chrome broswer");
 				
 				}else if(pro.getProperty("browser").equals("firefox")) {
 					
-					System.setProperty("webdriver.gecko.driver","C:\\Users\\BOSU\\eclipse-workspace\\demo\\src\\test\\resources\\Drivers\\geckodriver.exe");
+					System.setProperty("webdriver.gecko.driver","C:\\Users\\BOSU\\git\\demo\\demo\\src\\test\\resources\\Drivers\\geckodriver.exe");
 					driver = new FirefoxDriver();
 					log.info("Open firefox driver !!!");
 					
