@@ -140,7 +140,7 @@ public class baseclass {
 		@AfterSuite
 		 public void tearDown() throws IOException {
 			 if(driver!= null) {
-					driver.quit();
+					//driver.quit();
 					driver.close();
 					}
 		 } 
